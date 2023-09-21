@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
     "dev": "nodemon src/app.ts",
-    "build": "tsc && tsc-alias"
+    "build": "tsc && tsc-alias",
+    "migration:run": "prisma migrate deploy",
+    "start": "npm run migration:run && node dist/index.js"
   },
   "dependencies": {
     "@joi/date": "^2.1.0",

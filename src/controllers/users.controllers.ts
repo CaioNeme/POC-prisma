@@ -5,7 +5,6 @@ import httpStatus from "http-status";
 
 export async function registerUser(req: Request, res: Response): Promise<void> {
   const { name, email, password } = req.body as RegisterUser;
-
   await registerService.registerUser(name, email, password);
   res.sendStatus(httpStatus.CREATED);
 }

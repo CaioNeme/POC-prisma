@@ -1,26 +1,16 @@
 {
-  "name": "poc",
+  "name": "poc-prisma",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node dist/app.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc && tsc-alias"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CaioNeme/POC-typescript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CaioNeme/POC-typescript/issues"
-  },
-  "homepage": "https://github.com/CaioNeme/POC-typescript#readme",
   "dependencies": {
     "@joi/date": "^2.1.0",
+    "@prisma/client": "^5.3.1",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dayjs": "^1.11.9",
@@ -37,9 +27,13 @@
     "@types/node": "^20.6.0",
     "@types/pg": "^8.10.2",
     "nodemon": "^3.0.1",
+    "prisma": "^5.3.1",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.7",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
